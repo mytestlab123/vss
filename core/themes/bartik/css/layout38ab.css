@@ -1,0 +1,233 @@
+/**
+ * @file
+ * Bartik layout styling.
+ */
+
+/**
+ * Container
+ */
+.layout-container {
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  box-sizing: border-box;
+}
+@media all and (min-width: 851px) {
+  .layout-container {
+    max-width: 1024px;/*1290px;*/
+  }
+}
+
+/**
+ * Main
+ */
+.layout-main-wrapper {
+  /*min-height: 300px;*/
+}
+.layout-main {
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+a {
+    text-decoration:none;
+    border-bottom:none;
+}
+
+/*newly added css*/
+
+.site-branding__logo img {
+  width: 450px;
+  height: auto;
+  background: transparent;
+}
+.off-canvas-wrapper {
+    display: none;
+}
+nav.responsive-menu-block-wrapper {
+      float: right;
+}
+/*Primary menu*/
+#horizontal-menu li a {
+    color: #000;
+    text-transform: uppercase;
+    font-size: 12px;
+    padding: 1em 1.4em;
+    opacity: 0.7;
+    font-weight: bold;
+
+}
+#horizontal-menu li a:hover,
+#horizontal-menu li a:active, 
+#horizontal-menu li.menu-item--active-trail, 
+#horizontal-menu li.menu-item--active-trail a.is-active {
+    color:#fff;
+    background:#FE6000;
+}
+
+#block-horizontalmenu-2 {
+    float: right;
+    margin-top: 50px;
+}
+
+.horizontal-menu > li.menu-item.menu-item--expanded ul.sub-nav {
+    background: #FFBA77;
+}
+
+
+/*Frontpage Slideshow*/
+
+.highlighted img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+#views_slideshow_cycle_teaser_section_frontpage_slideshow-block_1, 
+.views_slideshow_cycle_slide {
+    width: 100% !important;
+    float: left;
+    clear: both;
+    display: block;
+    z-index: 0;
+}
+#views_slideshow_controls_text_previous_frontpage_slideshow-block_1 {
+  background:url('../images/backword.png') no-repeat;
+  left:25px;
+}
+#views_slideshow_controls_text_previous_frontpage_slideshow-block_1:hover {
+    background:url('../images/backword_hover.png') no-repeat;
+    left:25px;
+}
+#views_slideshow_controls_text_pause_frontpage_slideshow-block_1 {
+  display:none;
+}
+
+#views_slideshow_controls_text_next_frontpage_slideshow-block_1 {
+    background:url('../images/forward.png') no-repeat;
+    right:0px;
+}
+
+#views_slideshow_controls_text_next_frontpage_slideshow-block_1:hover {
+    background:url('../images/forward_hover.png') no-repeat;
+    right:0px;
+}
+
+#views_slideshow_controls_text_previous_frontpage_slideshow-block_1,
+#views_slideshow_controls_text_next_frontpage_slideshow-block_1
+{
+  width:71px;
+  height:0px;
+  padding-top:71px;
+  position:absolute;
+  overflow:hidden;
+  top:160px;
+}
+.views-slideshow-controls-top {
+    z-index: 1;
+    position: relative;
+    background: transparent;
+}
+
+/*Frontpage blocks*/
+.featured-bottom{
+    background:none !important;
+    border:none !important;
+}
+.featured-bottom .block {
+    border:none !important;
+}
+
+.featured-bottom .block-block-content {
+    /*padding:1em 1em;*/
+}
+
+
+.featured-bottom .region .block-block-content:nth-child(2) a:hover{
+  background:none;
+}
+.featured-bottom .region .block-block-content:nth-child(2) {
+    position: relative;
+}
+.featured-bottom .region .block-block-content:nth-child(2) h2 {
+
+    position: absolute;
+    /*margin-top: 73%;*/
+    background: #FE6000 100%;
+    padding: 5px 0px;
+    color: #fff;
+    width: 99%;
+    bottom: 23px;
+    left: 5px;
+ }
+
+#block-sanskar-2 {
+    /*background: url("/sites/default/files/inline-images/vichar-manthan.jpg");*/
+}
+#block-sanskar-2 h2,
+#block-seva-2 h2,
+#block-samanvay-2 h2 {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 2.5em;
+    margin: 0px 0 0.5em 0;
+    padding: 0;
+    text-align: left;
+}
+/*
+.featured-bottom .block-block-content a {
+    background: #fff;
+    padding: 5px;
+    text-decoration: none;
+    color:#222;
+    border:none;
+}
+.featured-bottom .block-block-content a:hover {
+    background: #FE6000;
+    padding: 5px;
+    text-decoration: none;
+    color:#fff;
+}
+.featured-bottom .region .block-block-content:last-child {
+    border:1px solid #FE6000 !important;
+    padding :10px;
+}*/
+
+/*Program-ITGF page*/
+
+#sidebar-first .block{
+    background:none;
+    padding-left:0;
+    border:none;
+  
+}
+#sidebar-first .block-menu ul {
+    padding-left:0;
+}
+#sidebar-first .block-menu ul li.menu-item {
+    background: #f6f6f2;
+    padding: 5px 10px;
+    margin: 10px 0;
+}
+#sidebar-first .block-menu ul li.menu-item a {
+    color:#000;
+    text-decoration:none;
+}
+
+.field--name-field-pics .field__item {
+    float: left;
+    margin-right: 10px;
+}
+
+/*Footer*/
+.site-footer__top h2,
+.site-footer__top .content li a{
+    border-bottom:none !important;
+}
+
+/*Copyright block*/
+
+#block-copyrights {
+    text-align:center;
+}
+#bitnami-banner{
+    display:none;
+}
